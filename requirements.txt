@@ -51,4 +51,6 @@ altair
 plotly
 joblib
 protobuf~=3.19.0
-importlib-metadata;python_version<'3.8'
+importlib-metadata<4.3;python_version<'3.8'
+packaging<22
+google-auth-oauthlib<0.5
