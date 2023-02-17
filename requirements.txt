@@ -49,3 +49,4 @@ packgenlite @ git+https://github.com/krokrob/packgenlite.git@master
 streamlit
 altair
 plotly
+joblib
