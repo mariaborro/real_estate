@@ -50,3 +50,4 @@ streamlit
 altair
 plotly
 joblib
+protobuf~=3.19.0
