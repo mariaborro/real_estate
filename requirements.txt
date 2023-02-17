@@ -51,4 +51,4 @@ altair
 plotly
 joblib
 protobuf~=3.19.0
-python_version=="3.7"
+importlib-metadata;python_version<'3.8'
