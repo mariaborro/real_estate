@@ -221,7 +221,11 @@ else:
 
 predict_btt = st.button("PREDICT")
 
-url = "http://127.0.0.1:8000/predict"
+#this is the url version for running locally:
+#url = "http://127.0.0.1:8000/predict"
+
+#this is the current url for deployment:
+url = "https://api-real-estate.onrender.com/predict"
 
 if predict_btt:
     with st.spinner("Please wait :)"):
