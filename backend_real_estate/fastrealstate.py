@@ -6,7 +6,8 @@ import pandas as pd
 
 app = FastAPI()
 
-app.state.model = joblib.load("model_realestate_XGB")
+#ATTENTION!! if executed locally the model name would be enough, I've written its folder because this is for deployment:
+app.state.model = joblib.load("backend_real_estate/model_realestate_XGB")
 
 @app.get("/")
 def home():
