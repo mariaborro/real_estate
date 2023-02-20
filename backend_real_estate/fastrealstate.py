@@ -1,5 +1,5 @@
 import numpy as np
-from preprocess_realestate import prepare
+#from preprocess_realestate import prepare
 from fastapi import FastAPI
 import joblib
 import pandas as pd
@@ -45,9 +45,9 @@ async def make_prediction(sq_metres, rooms, bathrooms, needs_renewal, is_new, ha
        'district_id_3', 'district_id_4', 'district_id_5', 'district_id_6',
        'district_id_7', 'district_id_8', 'district_id_9'])
 
-    df_preprocessed = prepare(df_elements)
+    #df_preprocessed = prepare(df_elements)
 
-    prediction =  app.state.model.predict(df_preprocessed)
+    prediction =  app.state.model.predict(df_elements)
 
     price = str(prediction[0])
 
